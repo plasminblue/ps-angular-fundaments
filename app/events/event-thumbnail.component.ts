@@ -18,4 +18,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class EventThumbnailComponent {
     @Input() event: any
+    value = 'counter value'
+
+    logFoo(){
+        console.log('foo')
+    }
 }
