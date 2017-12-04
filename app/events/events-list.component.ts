@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'events-list',
-    templateUrl: `
+    template: `
        <div>
             <h1>Upcominng Angular 2 Events</h1>
             <hr />
-
             <event-thumbnail
-                [event]='event1' 
+                [event]='event1'
+                (eventClick)='handleEventClicked($event)'
             ></event-thumbnail>
        </div> 
     ` 
@@ -26,5 +26,9 @@ export class EventsListComponent {
             city: 'London',
             country: 'England'
         }
+    }
+
+    handleEventClicked(data){
+        console.log('event emitted: ', data);
     }
 }
