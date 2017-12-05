@@ -18,7 +18,7 @@
     "@angular/http": "4.0.0",
     "@angular/platform-browser": "4.0.0",
     "@angular/platform-browser-dynamic": "4.0.0",
-    "@angular/router": "4.0.0",
+    "@angular/router": "^5.0.5",
     "core-js": "2.4.1",
     "ng2f-bootstrap": "^0.0.4",
     "ng2f-server": "^0.2.3",

@@ -1,13 +1,12 @@
 import {
     Component
 } from '@angular/core';
-import { EventService } from '../shared/event.service';
+import { EventService } from './shared/event.service';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import { AbstractClassPart } from '@angular/compiler/src/output/output_ast';
 import { ToastrService } from '../common/toastr.service';
 
 @Component({
-    selector: 'events-list',
     template: `
     <div>
         <h1>Upcominng Angular 2 Events</h1>
