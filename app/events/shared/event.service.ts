@@ -4,7 +4,6 @@ import { Subject } from 'rxjs/Rx';
 @Injectable()
 export class EventService {
     getEvents() {
-        console.log('inside getEvents')
         let subject = new Subject();
         setTimeout(() => {
             subject.next(EVENTS);
@@ -17,7 +16,7 @@ export class EventService {
     }
 }
 
-const EVENTS = [{
+const EVENTS = [{ 
         id: 1,
         name: 'Angular Connect',
         date: '9/26/2036',
