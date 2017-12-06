@@ -1,11 +1,10 @@
-import {
-    Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 import { EventService } from './shared/event.service';
 import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import { AbstractClassPart } from '@angular/compiler/src/output/output_ast';
 import { ToastrService } from '../common/toastr.service';
 import { ActivatedRoute } from '@angular/router';
+import { IEvent } from './shared/index';
 
 @Component({
     template: `
@@ -21,7 +20,7 @@ import { ActivatedRoute } from '@angular/router';
     `
 })
 export class EventsListComponent implements OnInit{
-    events: any
+   events: IEvent[] 
    constructor(
        private eventService: EventService, 
        private toastrService: ToastrService,
